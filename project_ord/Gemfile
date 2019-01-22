@@ -1,0 +1,4 @@
+source 'https://rubygems.org' do
+  gem 'rake'
+  #gem 'minitest',                  '~> 5.10', '>= 5.10.1'
+end

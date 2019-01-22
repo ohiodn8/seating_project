@@ -1,0 +1,42 @@
+require 'rake/testtask'
+
+namespace :scan do
+  require './worker'
+
+  desc "Test Check for the rake command"
+  task :check do
+    Worker.new('check').process
+  end
+
+  desc "Print all seats (rows and columns as array)"
+  task :trigger do
+    Worker.new('trigger').process
+  end
+  
+  desc "Print Available Seats"
+  task :available do
+    Worker.new('south').process
+  end 
+
+  desc "Print Two Available Seats"  
+  task :double do
+    Worker.new('west').process
+  end   
+  
+  desc "Prints all rows and columns as array"
+  task :single do
+    Worker.new('north').process
+  end 
+
+  desc "Generate Random 12 Digits Password"
+  task :password do
+    Worker.new('password').process
+  end   
+  
+  desc "Print CSV"
+  task :delight do
+    p CSV.read("./row_column.csv")
+  end  
+  
+end
+

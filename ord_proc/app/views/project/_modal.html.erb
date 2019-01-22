@@ -1,0 +1,42 @@
+<div id="id01" class="w3-modal">
+<div class="w3-modal-content w3-card-4">
+  <header class="w3-container w3-teal"> 
+	<span onclick="document.getElementById('id01').style.display='none'" 
+	class="w3-button w3-display-topright">&times;</span>
+	<h2>Available Seats</h2>
+  </header>
+  <div class="w3-container">
+	<h4><%= @group %></h4>
+  </div>
+</div>
+</div>
+  
+<div id="single" class="w3-modal">
+<div class="w3-modal-content w3-card-4">
+  <header class="w3-container w3-teal"> 
+    <a href="/">
+	<span onclick="document.getElementById('single').style.display='none'" 
+	class="w3-button w3-display-topright">&times;</span>
+	</a>
+	<h2>Single Available Seat</h2>
+  </header>
+  <div class="w3-container">
+	<h4><%= @file %></h4>
+  </div>
+</div>
+</div> 
+
+<div id="double" class="w3-modal">
+<div class="w3-modal-content w3-card-4">
+  <header class="w3-container w3-teal"> 
+    <a href="/">
+	<span onclick="document.getElementById('double').style.display='none'" 
+	class="w3-button w3-display-topright">&times;</span>
+	</a>
+	<h2>Double Available Seats</h2>
+  </header>
+  <div class="w3-container">
+	<h4><%= @double %></h4>
+  </div>
+</div>
+</div> 

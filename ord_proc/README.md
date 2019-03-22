@@ -17,4 +17,7 @@ Things you may want to cover:
 
 * On the browser, visit <code><a href="localhost:3000" target="_blank">localhost:3000</a></code>
 
+
+(Removed database, active record, active storage and mailer)
+
 * ...
